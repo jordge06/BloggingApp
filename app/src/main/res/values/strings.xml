@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Blogging App</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="action_sign_in">Login to your Account</string>
+    <string name="action_sign_up">Create new Account</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="action_search">Search</string>
+    <string name="action_account_settings">Account Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_notification">Notification</string>
+    <string name="account_name">Your Name</string>
+    <string name="account_btn_name">Save Account Settings</string>
+    <string name="new_post_hint">Post Description</string>
+    <string name="new_post_button_text">Post Blog</string>
+    <string name="comment_display_text">Comments</string>
+    <string name="comment_hint">Write a Comment</string>
+    <string name="delete_text">Delete Post</string>
+    <string name="action_delete_option">Delete Post</string>
+</resources>

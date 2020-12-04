@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.bloggingapp.Fragments.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_nav_home_to_nav_profile"
+            app:destination="@id/nav_profile"
+            app:popUpTo="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_home_to_commentFragment"
+            app:destination="@id/commentFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_new_post"
+            app:destination="@id/nav_new_post"
+            app:popUpTo="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@id/nav_search"
+        android:name="com.example.bloggingapp.Fragments.SearchFragment"
+        android:label="SearchFragment"/>
+
+    <fragment
+        android:id="@id/nav_new_post"
+        android:name="com.example.bloggingapp.Fragments.NewPostFragment"
+        android:label="NewPostFragment">
+        <action
+            android:id="@+id/action_nav_new_post_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@id/nav_likes"
+        android:name="com.example.bloggingapp.Fragments.NotificationFragment"
+        android:label="NotifcationFragment"/>
+
+    <fragment
+        android:id="@id/nav_profile"
+        android:name="com.example.bloggingapp.Fragments.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_nav_profile_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_profile_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.example.bloggingapp.Fragments.CommentFragment"
+        android:label="CommentFragment" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.bloggingapp.EditProfileFragment"
+        android:label="EditProfileFragment" />
+</navigation>
